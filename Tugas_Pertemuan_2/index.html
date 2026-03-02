@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pertemuan 2</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><label for="username">Nama : <input type="text" name="username" placeholder="Masukkan Nama Pengguna"></label></td> 
+        </tr>
+        <tr>
+        <td><label for="email">Email : <input type="text" name="email" placeholder="Masukkan Email Pengguna"></label></td>
+        </tr>
+        <tr>
+        <td><label for="password">Password : <input type="password" name="password" placeholder="Masukkan Password Pengguna"></label></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="gender"> Jenis Kelamin :
+                    <input type="radio" name="gender" value="male">Laki-laki
+                </label> 
+                    <label for="gender">
+                        <input type="radio" name="gender" value="female">Perempuan
+                    </label>
+                </td>
+        </tr>
+        <tr>
+            <td><label for="hobi">Hobi : <input type="radio" name="hobi" value="musik">Musik </label>
+                <label><input type="radio" name="hobi" value="olahraga">Olahraga
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="pilihan">Pilih Kota : </label>
+                <select name="pilihan" id="">
+                    <option value="1">Jakarta</option>
+                    <option value="2">Karawang</option>
+                    <option value="3">Bekasi</option>
+                    <option value="4">Subang</option>
+                    <option value="5">Sukabumi</option>
+                    <option value="6">Bandung</option>
+                    <option value="7">Indramayu</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><form action="upload.php" method="post" enctype="multipart/form-data">
+                <label for="file">Pilih Foto</label>
+                <input type="file" name="file" id="file"><br>
+                <button type="submit">Unggah</button>
+            </form>
+        </td>
+    </tr>
+</table>
+    
+    
+    
+    
+    
+</body>
+</html>
