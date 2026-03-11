@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h2>Kalkulator perhitungan nilai dari satuan angka ke satuan huruf</h2></header>  
+  <form>
+  <div class="container">
+     
+      <label for="nama">Nama : </label>
+      <input type="text" id="nama" placeholder="Masukkan Nama Lengkap anda" required>
+      <label for="npm">NPM : </label>
+      <input type="text"  id="npm" placeholder="Masukkan NPM anda" required>
+      <label for="nmatakuliah">Nilai Matakuliah : </label>
+      <input type="number"  id="nmatakuliah" placeholder="Masukkan Nilai Matakuliah anda" required>
+      <p>Hasil : <span id="hasil"></span></p>
+    </div>
+    </form> 
+    
+    <button onclick="hitung()" type="submit" class="btn">Hitung</button>
+    <script src="script.js"></script>
+</body>
+</html>
