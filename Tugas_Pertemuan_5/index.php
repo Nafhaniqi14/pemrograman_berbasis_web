@@ -7,7 +7,7 @@ $totalharga = $jumlahbeli * $hargasatuan[0];
 
 echo "<h1>Perhitungan Total Pembelian Barang (Dengan Array) </h1>";
 echo '<hr style="width:37%; border:2px solid black; margin-left:0;">';
-echo "Nama Barang : " . $namabarang[0] . "<br>";
+echo "Nama Barang : {$namabarang[0]} <br>" ;
 echo "Harga Satuan : Rp " . $hargasatuan[0] . ".000" . "<br>";
 echo "Jumlah Beli : " . $jumlahbeli . "<br>";
 echo "Total Harga (Sebelum Pajak) : Rp " . $totalharga . ".000" . "<br>";
