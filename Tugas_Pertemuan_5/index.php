@@ -13,6 +13,6 @@ echo "Harga Satuan : Rp {$hargasatuan[0]} 000 <br>";
 echo "Jumlah Beli : {$jumlahbeli} <br>";
 echo "Total Harga (Sebelum Pajak) : Rp {$totalharga}.000<br>";
 echo "Pajak (10%): Rp" . $totalharga * pajak . ".000" . "<br>";
-echo "<b>Total Bayar : RP $totalharga + $totalharga * pajak .000</b> <br>";
+echo "<b>Total Bayar : RP " . $totalharga + $totalharga * pajak . ".000</b> <br>";
 echo "<a href='../Tugas_Pertemuan_6/latihan_nilai.php'>Klik Untuk Masuk ke</a>";
 ?>
