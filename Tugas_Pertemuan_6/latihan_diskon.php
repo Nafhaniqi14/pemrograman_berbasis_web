@@ -19,19 +19,16 @@
     $var_prodi = $_POST['prodi'];
     $var_smt = $_POST['semester'];
     $var_bukt = $_POST['BUKT'];
-    $var_diskon = 0;
     echo"NPM :  {$var_npm} <br>";
     echo "Nama : {$var_nama} <br>";
     echo "Semester : {$var_smt} <br>";
     echo"Biaya UKT : {$var_bukt} <br>";
     if  ($var_bukt >= 5000000 && $var_smt >8) {
-        $var_diskon = 0.15;
-        echo "Diskon : " . $var_diskon*100 . "% <br>" ;
-        echo "yang harus dibayar : " . $var_bukt-$var_bukt*$var_diskon ;
+        echo "Diskon : 15% <br>" ;
+        echo "yang harus dibayar : " . $var_bukt-$var_bukt*0.15 ;
       } else if($var_bukt >= 5000000){
-        $var_diskon = 0.1;
-        echo "Diskon : " . $var_diskon*100 . "% <br>" ;
-        echo "yang harus dibayar : " . $var_bukt-$var_bukt*$var_diskon ;
+        echo "Diskon : 10% <br>" ;
+        echo "yang harus dibayar : " . $var_bukt-$var_bukt*0.10 ;
       }
     ?>
     </form>
