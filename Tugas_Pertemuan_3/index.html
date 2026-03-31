@@ -3,89 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Sederhana</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    <header><h1>Selamat Datang di Website Sederhana</h1></header>
-    <nav>
-        <ul>
-            <li><a href="">Beranda</a></li>
-            <li><a href="">Tentang</a></li>
-            <li><a href="">Layanan</a></li>
-            <li><a href="">Kontak</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <section class="content">
-            <h2>Formulir Pendaftaran</h2>
-            <p>Silahkan isi formulir di bawah untuk mendaftar</p>
-            <form action="" method="get">
-                    <label for="nama">Nama Lengkap:</label>
-                    <input type="text" id="nama" name="nama" class="form-control" required>
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" class="form-control"required>
-                    <label for="password" >Password :</label>
-                    <input type="password" id="password" name="password" class="form-control" required>
-                    <table class="genderr"> 
-                    <div style="border-bottom: 2px solid #d8dadb">
-                        <tr>
-                            <td><label for="gender">Jenis-Kelamin : </label></td>
-                        </tr>
-                        <tr>
-                        <td><label for="gender">Laki-laki</label></td>
-                        <td ><input  type="radio" id="jenis-kelamin" name="gender" value="laki-laki" required></td>
-                        </tr>
-                        <tr>
-                        <td><label for="gender">Perempuan</label></td>
-                        <td><input type="radio" id="jenis-kelamin" name="gender" value="perempuan" required></td>
-                        </tr>
-                    </div>                    
-                    </table>
-                    <table class="Hobii">
-                        <div style="border-bottom: 2px solid #d8dadb" class="hobi">
-                        <tr>
-                            <td>
-                        <label for="Hobi">Hobi : </label>
-                    </td>
-                        </tr>
-                        <tr>
-                        <td><label for="hobi">Musik</label></td>
-                        <td ><input  type="checkbox" id="hobi" name="hobi" value="musik"required></td>
-                        </tr>
-                        </tr>
-                        <tr>
-                        <td><label for="hobi">Olahraga</label></td>
-                        <td ><input  type="checkbox" id="hobi" name="hobi" value="olahraga"required></td>
-                        </tr>
-                        <tr>
-                        <td><label for="hobi">Membaca</label></td>
-                        <td ><input  type="checkbox" id="hobi" name="hobi" value="membaca"required></td>
-                        </tr>
-                    </div>
-                    </table>
-                    <div style="border-top: 2px solid #d8dadb">
-                        <label for="pilihan">Pilih Kota : </label>
-                <select name="pilihan" id="kota" required>
-                    <option value="1">Jakarta</option>
-                    <option value="2">Karawang</option>
-                    <option value="3">Bekasi</option>
-                    <option value="4">Subang</option>
-                    <option value="5">Sukabumi</option>
-                    <option value="6">Bandung</option>
-                    <option value="7">Indramayu</option>
-                </select>
-                <label for="pesan">Pesan Tambahan : </label>
-                <textarea name="pesan" id="pesan" placeholder="Tulis pesan di sini....."></textarea>
-                
-                <button class="btn">Kirim</button>
-    </form>                 
     
-        </section>
-        <aside class="sidebar">
-            <h2>Sidebar</h2>
-            <p>Bagian sidebar dapat berisi tautan, iklan, atau informasi tambahan</p>
-        </aside>
-    </div>
 </body>
 </html>
+<html>
+        <head>
+            <title>Tugas Praktikum 3</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+    <body>
+        <header>
+        <h1>Selamat Datang di Website Sederhana</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Layanan</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <section class="content">
+                <form action="#" method="post">
+                <h2>Formulir Pendaftaran</h2>
+                <p>Silahkan isi formulir di bawah ini untuk mendaftar</p>
+
+                <label for="nama"><b>Nama Lengkap:</b></label>
+                <input type="text" name="name" id="nama" required>
+
+                <label for="email"><b>Email:</b></label>
+                <input type="email" name="email"id="email" required>
+
+                <label for="password"><b>Password:</b></label>
+                <input type="password" name="password" id="password" required>
+
+                <p><b>Jenis Kelamin:</b></p>
+                <label><input type="radio" name="gender" value="male" required><b>Laki-laki</b></label>
+                <label><input type="radio" name="gender" value="female"><b>Perempuan</b></label>
+                <hr><br>
+
+                <p><b>Hobi:</b></p>
+                <label><input type="checkbox" name="hobi[]" value="musik"><b>Musik</b></label>
+                <label><input type="checkbox" name="hobi[]" value="olahraga"><b>Olahraga</b></label>
+                <label><input type="checkbox" name="hobi[]" value="membaca"><b>Membaca</b></label>
+                <hr><br>
+
+                <label for="kota">Pilih Kota :</label>
+                <select id="kota" name="kota" required>
+                    <option value="jkt">Jakarta</option>
+                        <option value="sby">Surabaya</option>
+                        <option value="mlg">Malang</option>
+                        <option value="bdg">Bandung</option>
+                        <option value="krw">Karawang</option>
+                </select>
+
+                <label for="komentar">Pesan:</label>
+                <textarea id="komentar" name="komentar" rows="4" cols="50" required></textarea>
+                
+                <button type="submit" class="btn">Kirim</button>
+                </form>
+            </section>
+            <aside class="sidebar">
+                <h2>Sidebar</h2>
+                <p>Bagian sidebar dapat berisi tautan, iklan, atau informasi tambahan</p>
+            </aside>
+        </div>
+
+    <footer>
+        <>&copy; 2024Halaman Web Singaperbangsa. Dibuat dengan CSS.</p>
+    </footer>
+    </body>
+    </html>
