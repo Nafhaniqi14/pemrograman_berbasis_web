@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
     
 <?php
 $namabarang = ["Keyboard" , "Komputer", "Laptop"];
@@ -22,7 +14,5 @@ echo "Jumlah Beli : {$jumlahbeli} <br>";
 echo "Total Harga (Sebelum Pajak) : Rp {$totalharga}.000<br>";
 echo "Pajak (10%): Rp" . $totalharga * pajak . ".000" . "<br>";
 echo "<b>Total Bayar : RP $totalharga + $totalharga * pajak .000</b> <br>";
+echo "<a href='../Tugas_Pertemuan_6/latihan_nilai.php'>Klik Untuk Masuk ke</a>";
 ?>
-<a href="../Tugas_Pertemuan_6/latihan_nilai.php">Klik Untuk Masuk ke </a>
-</body>
-</html>
