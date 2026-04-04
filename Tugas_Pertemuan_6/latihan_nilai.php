@@ -9,8 +9,9 @@
     <form method="post" action="">
       Nama : <input type="text" name="nama"><br>
       Nilai : <input type="number" name="nilai"><br>
-      <input type="submit" value="proses"> <br>
+      <input type="submit" name="submit" value="proses"> <br>
       <?php
+      if(isset($_POST['submit'])){
     $var_nama = $_POST['nama']??'';
     $var_nilai = $_POST['nilai']??'';
     echo "Nama :  {$var_nama} <br>";
@@ -30,6 +31,7 @@
       else {
         echo "Predikat :  Tidak Valid";
         }
+      }
         ?>
     </form>
   </body>
